@@ -1,1 +1,1 @@
-# intelligen-chat-bot
+# intelligent-chat-bot
