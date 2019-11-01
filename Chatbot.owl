@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#hasfactors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#hasfactors">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_factor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_factor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#haspenalty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#haspenalty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Penalty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default_status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Amount_owed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Amount_owed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Bad_credit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Bad_credit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Penalty"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan_rejection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Banker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Banker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Client"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Client">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Create_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Create_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#No_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_factor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_history_age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_history_age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_report">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_risk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default_status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default_status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Has_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Has_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan_amount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan_amount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan_rejection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan_rejection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Penalty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#No -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#No">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default_status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#No_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#No_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Has_account"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Yes_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Payment_history -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Payment_history">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Penalty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Penalty">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#haspenalty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Yes"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Yes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Loan"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Student_Loan_Interest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Required_documents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Required_documents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Student_Loan_Interest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Student_Loan_Interest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Yes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Yes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Default_status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Yes_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Yes_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Has_account"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Amount_owed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_history_age"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Payment_history"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Application"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_report"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Has_account"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Required_documents"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Credit_report"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Has_account"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kalada/ontologies/2019/6/untitled-ontology-17#Required_documents"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
